@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">My Portfolio</h1>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="hover:text-blue-500">About</a></li>
+            <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+        <p>Hello! I'm a web developer passionate about creating beautiful and functional websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-4xl mx-auto mt-10 p-6">
+        <h2 class="text-2xl font-semibold mb-4">My Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-bold">Project 1</h3>
+                <p>A web app for task management.</p>
+            </div>
+            <div class="bg-white p-4 shadow-md rounded-lg">
+                <h3 class="text-xl font-bold">Project 2</h3>
+                <p>An e-commerce website with a modern design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-3xl mx-auto mt-10 p-6 bg-white shadow-md rounded-lg">
+        <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" class="w-full p-2 border rounded mb-2">
+            <input type="email" placeholder="Your Email" class="w-full p-2 border rounded mb-2">
+            <textarea placeholder="Your Message" class="w-full p-2 border rounded mb-2"></textarea>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+        </form>
+    </section>
+</body>
+</html>
