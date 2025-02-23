@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="animated slide-down navbar">
+    <a href="#aboutMe">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#personal-projects">PROJECTS</a>
+    <a href="#contact">CONTACTS</a>
+  </div>
+
+  <div class="page" id="aboutMe">
+    <div class="animated slide-up text">
+      <h1>BRIAN O. HAW</h1>
+      <h2>//SOFTWARE DEVELOPER//</h2>
+      <h4>
+        🔹 Hi! I'm a developer passionate about creating immersive 
+        and innovative software while collaborating with talented 
+        developers. Currently, I'm a 4th-year Computer Science 
+        student in Olongapo, Philippines.
+      </h4>
+      <div id="extra">
+        <h4>🔹 Versatile developer with expertise in multiple areas of software development.</h4>
+        <h4>🔹 Dedicated to delivering high-quality, innovative solutions.</h4>
+      </div>
+    </div>
+    <img class="animated slide-up" id="profile-img" src="image/profile-simple.png" alt="profile">
+  </div>  
+
+  <div class="page" id="skills">
+    <div class="skillContainer">
+      <div class="animated bounce-in header" id="skill-header">
+        <h2>SKILLS</h2>
+        <img class="animated fade-in skillset-img" src="image/skillset-blue.png">
+      </div>
+      
+      <div class="skills-section">
+        <div class="animated bounce-in category">
+          <h2>Programming Language</h2>
+          <div class="skill"><span>○ ○ ○ ● ●</span> C#</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> GDScript</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Java</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Python</div>
+        </div>
+        
+        <div class="animated bounce-in category">
+          <h2>Web Language</h2>
+          <div class="skill"><span>○ ○ ● ● ●</span> HTML</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> CSS</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> JavaScript</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> PHP</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> SQL</div>
+        </div>
+        
+        <div class="animated bounce-in category">
+          <h2>Art and Animation</h2>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Aseprite</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Blender</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Photoshop</div>
+        </div>
+
+        <div class="animated bounce-in category">
+          <h2>Game Engine</h2>
+          <div class="skill"><span>○ ○ ● ● ●</span> Godot</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Unity</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Unreal Engine</div>
+        </div>
+  
+        <div class="animated bounce-in category">
+          <h2>Database</h2>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Firebase</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> MySQL</div>
+          <div class="skill"><span>○ ○ ○ ○ ●</span> SQLite</div>
+          <div class="skill"><span>○ ○ ○ ○ ●</span> Oracle</div>
+        </div>
+  
+        <div class="animated bounce-in category">
+          <h2>Tool and Software</h2>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Canva</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Figma</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> GitHub</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Microsoft Office</div>
+          <div class="skill"><span>○ ○ ○ ● ●</span> Trello</div>
+          <div class="skill"><span>○ ○ ● ● ●</span> Vscode</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="education">
+    <h1 class="">Education</h1>
+    <div class="animated slide-up education-item">
+        <h2>Bachelor of Science in</h2>
+        <h2>Computer Science</h2>
+        <p class="college">Columban College, Inc. - Olongapo, Philippines</p>
+        <p class="graduation">Graduating: June 18, 2025</p>
+        <h3>Academic Achievements:</h3>
+        <ul>
+            <li>Academic Honor: 2021 - 2022</li>
+            <li>Dean’s List: 2022 - 2025</li>
+            <li>Expected to Graduate as Cum Laude</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="page" id="personal-projects">
+    <h1 class="animated bounce-in">Projects</h1>
+    <div class="animated bounce-in carousel-container">
+      <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 1">
+          <h4>Title1</h4>
+          <p class="description">Description of Project 1</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 2">
+          <h4>Title2</h4>
+          <p class="description">Description of Project 2</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 3">
+          <h4>Title3</h4>
+          <p class="description">Description of Project 3</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 4">
+          <h4>Title4</h4>
+          <p class="description">Description of Project 4</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 5">
+          <h4>Title5</h4>
+          <p class="description">Description of Project 5</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 6">
+          <h4>Title6</h4>
+          <p class="description">Description of Project 6</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 7">
+          <h4>Title7</h4>
+          <p class="description">Description of Project 7</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 8">
+          <h4>Title8</h4>
+          <p class="description">Description of Project 8</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 9">
+          <h4>Title9</h4>
+          <p class="description">Description of Project 9</p>
+        </div>
+        <div class="carousel-item">
+          <img src="image/profile-simple.png" alt="Project 10">
+          <h4>Title10</h4>
+          <p class="description">Description of Project 10</p>
+        </div>
+      </div>
+      <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="page" id="contact">
+    <h1 class="animated slide-up">Hire Me for Your Project</h1>
+    <div class="animated slide-up contact-section">
+        <h4><strong>Contact me through these methods to discuss the details:</strong></h4>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com" target="_blank" class="btn">LinkedIn</a>
+            <a href="mailto:brianshiroe@gmail.com" class="btn">Email</a>
+            <a href="https://www.facebook.com" target="_blank" class="btn">Facebook</a>
+        </div>
+    </div>
+
+    <div class="animated slide-up info">
+        <h3><strong>Information</strong></h3>
+        <div class="info-grid">
+            <p><strong>Name:</strong> Brian O. Haw</p>
+            <p><strong>Birth Date:</strong> January 17, 2002</p>
+            <p><strong>Email:</strong> <a href="mailto:brianshiroe@gmail.com">brianshiroe@gmail.com</a></p>
+            <p><strong>Country:</strong> Philippines</p>
+            <p><strong>City:</strong> Olongapo</p>
+        </div>
+    </div>
+
+    <div class="animated slide-up resume-section" id="resume">
+        <a href="path-to-your-resume.pdf" download class="btn download-btn">Download Resume</a>
+    </div>
+  </div>
+
+<script src="javascript.js"></script>
+</body>
+</html>

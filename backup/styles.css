@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    border: 8px solid;
+    min-height: 800px;
+    flex-wrap: wrap;
+    /* justify-content: center ; */
+    /* align-items: center;  */
+    /* justify-content: center; */
+    gap: 20px;
+}
+
+.box{
+    flex-shrink: 1;
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    height: 50px;
+    width: 50px;
+    background-color: blue;
+    font-size: 40pt;
+}
+
+#box1{
+    align-self: flex-end;
+}
+
+#others{
+    flex-direction: row;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

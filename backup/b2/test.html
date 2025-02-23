@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Dots Square</title>
+    <style>
+        .dot-square {
+            display: grid;
+            grid-template: repeat(5, 10px) / repeat(5, 10px);
+            gap: 5px;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="dot-square">
+        <script>
+            for(let i = 0; i < 25; i++) 
+                document.write('<div class="dot"></div>');
+        </script>
+    </div>
+</body>
+</html>

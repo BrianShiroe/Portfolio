@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: white;
+}
+h1{
+  font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
+}
+h3, h4, h6 {
+  font-family: 'Archivo Black', 'Garet', sans-serif;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit:contain;
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: #444444;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+}
+.navbar a {
+  z-index: 9999;
+  font-weight: 200;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* pages */
+.page {
+  height: 100dvh;
+  padding: 2em;
+  display: flex;
+  font-size: 24px;
+}
+
+/* page 1 */
+#aboutMe{
+  display: flex;
+  background: linear-gradient(to left top, #dcc200 40%, #002147 40%);
+}
+#aboutMe .left,#aboutMe .right {
+  width: 50%;
+}
+#aboutMe .text{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#aboutMe .profile{
+  position: absolute;
+  width: 35%;
+  height: auto;
+  margin-top: 7%;
+}
+
+/* page 2 */
+#skills{
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #5b20d1;
+  text-align: left;
+  margin-left: 5%;
+
+}
+.skillset-img{
+  margin-top: -40px;
+  width: 25%;
+  height: auto;
+}
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.skills-section > * {
+  flex: 1 1 calc(33.33% - 10px); /* 3 items per row */
+  margin: 5px;
+}
+.category h3{
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.skill {
+  font-size: 15px;
+  padding-left: 10px;
+  font-family: "Garet", sans-serif;
+}
+span{
+  margin-right: 10px;
+}
+
+/* Alternating background colors */
+.page:nth-child(6n+1) { background-color: #ffcccc; } /* Light Red */
+.page:nth-child(6n+2) { background-color: #ccffcc; } /* Light Green */
+.page:nth-child(6n+3) { background-color: #ccccff; } /* Light Blue */
+.page:nth-child(6n+4) { background-color: #ffffcc; } /* Light Yellow */
+.page:nth-child(6n+5) { background-color: #ffccff; } /* Light Pink */
+.page:nth-child(6n+6) { background-color: #d1c4e9; } /* Light Purple */
