@@ -18,7 +18,6 @@ h4, h5 {
 h6 {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-  color: gray;
 }
 p {
   font-family: 'Nunito', sans-serif;
@@ -36,20 +35,18 @@ body {
   margin: 0;
   padding: 0;
   color: white;
+  background: linear-gradient(135deg, #1e3c72 50%, #2a5298 70%, #1c3f6e 85%, #162a4e 100%);
 }
-/* div, img{
-  min-width: 280px;
-} */
-
 /* pages */
 .page {
-  min-height: 100dvh; /* Ensures it is at least the viewport height */
+  height: 100dvh; /* Ensures it is at least the viewport height (dont use min-height or it will have snapping problem)*/
   height: auto; /* Allows it to expand based on content */
   padding: min(2em, 8%);
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background: linear-gradient(135deg, #1e3c72 50%, #2a5298 70%, #1c3f6e 85%, #162a4e 100%);
 }
 
 /*NAVBAR*/
@@ -84,7 +81,6 @@ body {
 .hamburger {
   display: none;
   font-size: 24px;
-  color: white;
   cursor: pointer;
 }
 
@@ -96,9 +92,9 @@ body {
   justify-content: center;
   gap: min(8vw, 150px);
   text-align: justify;
-  padding: 4em 5%;
-  background: linear-gradient(135deg, #81d4fa 50%, #42a5f5 70%, #1565c0 85%, #0d47a1 100%);
-  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
+  padding: 5em 5%;
+  background: linear-gradient(135deg, #1e3c72 50%, #2a5298 70%, #1c3f6e 85%, #162a4e 100%);
+  background-size: 200% 200%; 
   animation: gradientMove 8s infinite alternate ease-in-out;
   flex-wrap: wrap;
 }
@@ -106,27 +102,42 @@ body {
   flex: 1;
   min-width: 200px;
   max-width: 500px;
-  color: white;
   padding: 2rem;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  background: rgba(34, 33, 33, 0.36);
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(12px);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.8), rgba(30, 30, 30, 0.9)); 
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3), 
+              inset 0 0 10px rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(15px); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+#aboutMe .text:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.4), 
+              inset 0 0 12px rgba(255, 255, 255, 0.15);
+  border: 3px solid rgba(255, 255, 255, 0.6); 
 }
 #profile-img {
   max-width: 250px;
   height: auto;
   border-radius: 50%;
-  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.4), 
+              inset 0 0 10px rgba(255, 255, 255, 0.2);
   object-fit: cover;
+  border: 5px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
+#profile-img:hover {
+  transform: scale(1.05); 
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5), 
+              inset 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
 
 /* skills */
 #skills{
-  color: #007bff;
+  color: #ffffff;
   text-align: center;
-  background: white;
 }
 #skill-header{
   display: flex; 
@@ -135,6 +146,9 @@ body {
   align-items: center;
   justify-content: center;
   text-decoration: underline;
+  background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
+  box-shadow: 4px 4px 15px rgba(83, 113, 145, 0.2);
+  border-radius: 10px;
 }
 .skillset-img{
   width: 25%;
@@ -145,6 +159,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   overflow: hidden;
+  color: white;
 }
 .skills-section > * {
   flex: 1 1 calc(33.33% - 10px); /* Ensures three columns with space in between */
@@ -154,7 +169,7 @@ body {
   min-width: 200px;
   padding: 20px 0px;
   margin: 20px 5px;
-  background: linear-gradient(135deg, #ffffff, #f0f7ff);
+  background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
   box-shadow: 4px 4px 15px rgba(0, 123, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
@@ -193,16 +208,16 @@ body {
   padding: 60px 20px;
   color: #333;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #e0f7ff 20%, #b3e5fc 40%, #81d4fa 60%, #4fc3f7 80%);
+  background: linear-gradient(to bottom, #1e3c72, #2a5298, #1c3f6e, #162a4e);
   background-size: 200% 200%; /* Makes the gradient larger for animation effect */
   animation: gradientMoveReverse 3s infinite alternate ease-in-out;
 }
 #education h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #606060c4;
   text-decoration: underline;
   text-align: center;
+  color: white;
 }
 .education-item {
   background: white;
@@ -265,7 +280,6 @@ body {
   position: absolute;
 }
 
-
 /* projects */
 #personal-projects {
   display: flex;
@@ -273,12 +287,12 @@ body {
   align-items: center;
   color: rgb(255, 255, 255);
   padding: 20px;
-  background: white;
 }
 #project-header{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 40px;
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 .carousel-container {
   display: flex;
@@ -289,7 +303,7 @@ body {
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 0px;
+  gap: 20px;
   padding: 10px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -299,10 +313,9 @@ body {
   display: none;
 }
 .carousel-item {
+  color: rgb(203, 203, 203);
   flex: 0 0 auto;
   width: 310px;
-  border: 2px solid #444;
-  background: #222;
   padding: 0px;
   border-radius: 0px;
   border-bottom-right-radius: 10px;
@@ -310,15 +323,25 @@ body {
   text-align: center;
   transition: transform 0.3s;
 }
+.carousel-item h4{
+  font-weight: bold;
+}
 .carousel-item:hover {
   transform: scale(1.05);
+}
+#personal-projects .projectImg {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
 }
 .carousel-item img {
   width: 300px;
   height: auto;
-  border-radius: 0px;
+  border-radius: 20px;
   padding-top: 1px;
-  border-bottom-right-radius: 100px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
+  background-color: #f8f9fa; /* Light background for better contrast */
 }
 .description {
   font-size: 14px;
@@ -352,16 +375,17 @@ body {
   align-items: center;
   padding: 40px;
   color: #333;
-  background: linear-gradient(100deg, #e0f7ff 20%, #b3e5fc 40%, #81d4fa 60%, #4fc3f7 80%);
-  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
-  animation: gradientMove 3s infinite alternate ease-in-out; /* animation for gradiant*/
+  background: linear-gradient(100deg, #1e3c72 20%, #2a5298 40%, #1c3f6e 60%, #162a4e 80%);
+  background-size: 200% 200%;
+  animation: gradientMove 3s infinite alternate ease-in-out;
 }
 #hireme{
   margin-bottom: 10px;
+  text-align: center;
 }
 #contact h1{
   text-decoration: underline;
-  color: #222;
+  color: #fffefe;
 }
 .contact-section, .info {
   background: #fff;
@@ -442,28 +466,6 @@ body {
 .swing-in.visible {
   animation: swingIn 0.8s ease-out;
 }
-.flip-card.visible {
-  animation: flipCard 1s ease-in-out;
-}
-.glitch.visible {
-  animation: glitch 0.5s linear infinite;
-}
-.jelly.visible {
-  animation: jelly 0.7s ease-in-out;
-}
-.typing.visible {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.wave.visible {
-  animation: wave 3s ease-in-out infinite;
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -517,72 +519,6 @@ body {
     opacity: 1;
   }
 }
-@keyframes flipCard {
-  0% {
-    transform: rotateY(0);
-  }
-  50% {
-    transform: rotateY(90deg);
-  }
-  100% {
-    transform: rotateY(0);
-  }
-}
-@keyframes glitch {
-  0% {
-    transform: translate(0);
-  }
-  25% {
-    transform: translate(-5px, 5px);
-  }
-  50% {
-    transform: translate(5px, -5px);
-  }
-  75% {
-    transform: translate(-5px, 5px);
-  }
-  100% {
-    transform: translate(0);
-  }
-}
-@keyframes jelly {
-  0% {
-    transform: scale(1, 1);
-  }
-  25% {
-    transform: scale(1.25, 0.75);
-  }
-  50% {
-    transform: scale(0.75, 1.25);
-  }
-  75% {
-    transform: scale(1.15, 0.85);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-/* typewriting cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
 @keyframes gradientMove {
   0% {
     background-position: 0% 0%;
@@ -599,10 +535,6 @@ body {
     background-position: 0% 0%;
   }
 }
-
-/* Alternating background colors */
-.page:nth-child(odd) { background-color: #3D1F5F; }
-.page:nth-child(even) { background-color: #4A148C; }
 
 /* different width sizes */
 @media(max-width:768px){
@@ -640,6 +572,12 @@ body {
   }
   h3,h4,h6{
     font-size:1.2em;
+  }
+  #project-header{
+    font-size: 30px;
+  }
+  #hireme{
+    font-size: 20px;
   }
   .contact-links {
     flex-direction: column;
