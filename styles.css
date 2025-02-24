@@ -37,9 +37,9 @@ body {
   padding: 0;
   color: white;
 }
-div, img{
+/* div, img{
   min-width: 280px;
-}
+} */
 
 /* pages */
 .page {
@@ -95,24 +95,26 @@ div, img{
   align-items: center;
   justify-content: center;
   gap: min(8vw, 150px);
-  background: linear-gradient(135deg, #b8a46c 35%, #1E3A8A 65%);
-  padding: 4em 5%;
   text-align: justify;
+  padding: 4em 5%;
+  background: linear-gradient(135deg, #81d4fa 50%, #42a5f5 70%, #1565c0 85%, #0d47a1 100%);
+  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
+  animation: gradientMove 8s infinite alternate ease-in-out;
+  flex-wrap: wrap;
 }
 #aboutMe .text {
   flex: 1;
-  min-width: 300px;
+  min-width: 200px;
   max-width: 500px;
   color: white;
   padding: 2rem;
   border: 3px solid rgba(255, 255, 255, 0.4);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(34, 33, 33, 0.36);
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(12px);
 }
 #profile-img {
-  width: 30%;
   max-width: 250px;
   height: auto;
   border-radius: 50%;
@@ -122,9 +124,9 @@ div, img{
 
 /* skills */
 #skills{
-  background-color: #FAFAFA;
   color: #007bff;
   text-align: center;
+  background: white;
 }
 #skill-header{
   display: flex; 
@@ -132,6 +134,7 @@ div, img{
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  text-decoration: underline;
 }
 .skillset-img{
   width: 25%;
@@ -148,7 +151,7 @@ div, img{
   margin: 5px;
 }
 .category{
-  min-width: 300px;
+  min-width: 200px;
   padding: 20px 0px;
   margin: 20px 5px;
   background: linear-gradient(135deg, #ffffff, #f0f7ff);
@@ -186,15 +189,20 @@ div, img{
 #education {
   display: flex;
   flex-direction: column;
+  gap: min(200px, 8%);
   padding: 60px 20px;
-  background: linear-gradient(135deg, #e3f2fd, #f4f4f4);
   color: #333;
   font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f7ff 20%, #b3e5fc 40%, #81d4fa 60%, #4fc3f7 80%);
+  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
+  animation: gradientMoveReverse 3s infinite alternate ease-in-out;
 }
 #education h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #606060c4;
+  text-decoration: underline;
+  text-align: center;
 }
 .education-item {
   background: white;
@@ -233,15 +241,44 @@ div, img{
   border-radius: 8px;
   margin: 8px 0;
 }
+#educ-eye {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.eye {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 5px #000;
+  position: relative;
+}
+.pupil {
+  width: 20px;
+  height: 20px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
 
 /* projects */
 #personal-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #333;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 20px;
+  background: white;
+}
+#project-header{
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  text-decoration: underline;
 }
 .carousel-container {
   display: flex;
@@ -314,14 +351,17 @@ div, img{
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background: #f4f4f4;
   color: #333;
+  background: linear-gradient(100deg, #e0f7ff 20%, #b3e5fc 40%, #81d4fa 60%, #4fc3f7 80%);
+  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
+  animation: gradientMove 3s infinite alternate ease-in-out; /* animation for gradiant*/
 }
 #hireme{
   margin-bottom: 10px;
 }
 #contact h1{
   text-decoration: underline;
+  color: #222;
 }
 .contact-section, .info {
   background: #fff;
@@ -374,6 +414,55 @@ div, img{
 .download-btn:hover {
   background: #218838;
   transform: scale(1.05);
+}
+
+/* Default state before animation */
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+/* Active animation when visible */
+.animated.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.slide-up.visible {
+  animation: slideUp 0.6s ease-out;
+}
+.fade-in.visible {
+  animation: fadeIn 0.8s ease-in;
+}
+.slide-down.visible {
+  animation: slideDown 0.7s ease-out;
+}
+.bounce-in.visible {
+  animation: bounceIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.swing-in.visible {
+  animation: swingIn 0.8s ease-out;
+}
+.flip-card.visible {
+  animation: flipCard 1s ease-in-out;
+}
+.glitch.visible {
+  animation: glitch 0.5s linear infinite;
+}
+.jelly.visible {
+  animation: jelly 0.7s ease-in-out;
+}
+.typing.visible {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+.wave.visible {
+  animation: wave 3s ease-in-out infinite;
 }
 
 /* Animations */
@@ -494,54 +583,21 @@ div, img{
     transform: translateY(-10px);
   }
 }
-
-/* Default state before animation */
-.animated {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }
-/* Active animation when visible */
-.animated.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.slide-up.visible {
-  animation: slideUp 0.6s ease-out;
-}
-.fade-in.visible {
-  animation: fadeIn 0.8s ease-in;
-}
-.slide-down.visible {
-  animation: slideDown 0.7s ease-out;
-}
-.bounce-in.visible {
-  animation: bounceIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.swing-in.visible {
-  animation: swingIn 0.8s ease-out;
-}
-.flip-card.visible {
-  animation: flipCard 1s ease-in-out;
-}
-.glitch.visible {
-  animation: glitch 0.5s linear infinite;
-}
-.jelly.visible {
-  animation: jelly 0.7s ease-in-out;
-}
-.typing.visible {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-.wave.visible {
-  animation: wave 3s ease-in-out infinite;
+@keyframes gradientMoveReverse {
+  0% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 /* Alternating background colors */
@@ -552,6 +608,9 @@ div, img{
 @media(max-width:768px){
   body{
     font-size:14px;
+  }
+  #profile-img{
+    width: 80%;
   }
   .menu {
     display: none;
