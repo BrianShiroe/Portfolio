@@ -37,10 +37,11 @@ body {
   color: white;
   background: linear-gradient(135deg, #1e3c72 50%, #2a5298 70%, #1c3f6e 85%, #162a4e 100%);
 }
+
 /* pages */
 .page {
-  height: 100dvh; /* Ensures it is at least the viewport height (dont use min-height or it will have snapping problem)*/
-  height: auto; /* Allows it to expand based on content */
+  height: 100dvh;
+  height: auto;
   padding: min(2em, 8%);
   display: flex;
   justify-content: center;
@@ -111,6 +112,16 @@ body {
   backdrop-filter: blur(15px); 
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
+#aboutMe h1{
+  text-align: center;
+}
+#aboutMe h2{
+  padding-bottom: 10px;
+  text-align: center;
+}
+#aboutMe li{
+  padding-bottom: 10px;
+}
 #aboutMe .text:hover {
   transform: translateY(-5px); /* Slight lift effect */
   box-shadow: 12px 12px 30px rgba(0, 0, 0, 0.4), 
@@ -133,7 +144,6 @@ body {
               inset 0 0 12px rgba(255, 255, 255, 0.3);
 }
 
-
 /* skills */
 #skills{
   color: #ffffff;
@@ -149,9 +159,10 @@ body {
   background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
   box-shadow: 4px 4px 15px rgba(83, 113, 145, 0.2);
   border-radius: 10px;
+  padding: 10px;
 }
 .skillset-img{
-  width: 25%;
+  width: 400px;
   height: auto;
 }
 .skills-section {
@@ -160,9 +171,10 @@ body {
   justify-content: space-between;
   overflow: hidden;
   color: white;
+  padding: 10px;
 }
 .skills-section > * {
-  flex: 1 1 calc(33.33% - 10px); /* Ensures three columns with space in between */
+  flex: 1 1 calc(33.33% - 10px);
   margin: 5px;
 }
 .category{
@@ -173,6 +185,7 @@ body {
   box-shadow: 4px 4px 15px rgba(0, 123, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
+  padding: 10px;
 }
 .category:hover {
   transform: translateY(-5px); /* Slight lift on hover */
@@ -193,8 +206,7 @@ body {
   border-radius: 10px;
   background: rgba(0, 123, 255, 0.1); /* Light blue background */
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
 }
 .skill span {
   font-weight: bold;
@@ -343,8 +355,9 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
   background-color: #f8f9fa; /* Light background for better contrast */
 }
-.description {
+#personal-projects .description {
   font-size: 14px;
+  text-align: justify;
 }
 .carousel-btn {
   background-color: rgba(0, 0, 0, 0.7);
