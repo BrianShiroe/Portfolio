@@ -19,6 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 // image carousel navigation
 function scrollCarousel(direction) {
   const carousel = document.querySelector(".carousel");
-  const scrollAmount = 319; // Adjust scroll distance
+  const scrollAmount = 315; // Adjust scroll distance
   carousel.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
 }

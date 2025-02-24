@@ -8,15 +8,23 @@
 </head>
 <body>
   <div class="animated slide-down navbar">
-    <a href="#aboutMe">ABOUT</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#education">EDUCATION</a>
-    <a href="#personal-projects">PROJECTS</a>
-    <a href="#contact">CONTACTS</a>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu">
+        <a href="#aboutMe">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#personal-projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </div>
   </div>
+  <script>
+      function toggleMenu() {
+          document.querySelector(".menu").classList.toggle("active");
+      }
+  </script>
 
   <div class="page" id="aboutMe">
-    <div class="animated slide-up text">
+    <div class="animated bounce-in text">
       <h1>BRIAN O. HAW</h1>
       <h2>//SOFTWARE DEVELOPER//</h2>
       <h4>
@@ -30,7 +38,7 @@
         <h4>🔹 Dedicated to delivering high-quality, innovative solutions.</h4>
       </div>
     </div>
-    <img class="animated slide-up" id="profile-img" src="image/profile-simple.png" alt="profile">
+    <img class="animated bounce-in" id="profile-img" src="image/profile-simple.png" alt="profile">
   </div>  
 
   <div class="page" id="skills">
@@ -94,7 +102,7 @@
   </div>
 
   <div class="page" id="education">
-    <h1 class="">Education</h1>
+    <h1 class="animated bounce-in">Education</h1>
     <div class="animated slide-up education-item">
         <h2>Bachelor of Science in</h2>
         <h2>Computer Science</h2>
@@ -111,7 +119,7 @@
 
   <div class="page" id="personal-projects">
     <h1 class="animated bounce-in">Projects</h1>
-    <div class="animated bounce-in carousel-container">
+    <div class="animated slide-up carousel-container">
       <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
       <div class="carousel">
         <div class="carousel-item">
@@ -170,7 +178,7 @@
   </div>
 
   <div class="page" id="contact">
-    <h1 class="animated slide-up">Hire Me for Your Project</h1>
+    <h1 class="animated bounce-in" id="hireme">Hire Me for Your Project</h1>
     <div class="animated slide-up contact-section">
         <h4><strong>Contact me through these methods to discuss the details:</strong></h4>
         <div class="contact-links">
@@ -185,13 +193,13 @@
             <p><strong>Name:</strong> Brian O. Haw</p>
             <p><strong>Birth Date:</strong> January 17, 2002</p>
             <p><strong>Email:</strong> <a href="mailto:brianshiroe@gmail.com">brianshiroe@gmail.com</a></p>
-            <p><strong>Country:</strong> Philippines</p>
             <p><strong>City:</strong> Olongapo</p>
+            <p><strong>Country:</strong> Philippines</p>
         </div>
     </div>
 
-    <div class="animated slide-up resume-section" id="resume">
-        <a href="path-to-your-resume.pdf" download class="btn download-btn">Download Resume</a>
+    <div class="animated bounce-in resume-section" id="cv">
+        <a href="path-to-your-resume.pdf" download class="btn download-btn">Download Resume/CV</a>
     </div>
   </div>
 

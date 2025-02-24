@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@300;400&family=Ubuntu:wght@500&family=Nunito:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -25,6 +26,11 @@ p {
   line-height: 1.8;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -49,23 +55,37 @@ div, img{
 /*NAVBAR*/
 .navbar {
   display: flex;
-  justify-content: center;
-  background-color: #444444;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(68, 68, 68, 0.8);
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 5px 20px;
   z-index: 9999;
+  font-family: 'Poppins', sans-serif;
 }
 .navbar a {
-  z-index: 9999;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 14px;
   color: white;
-  padding: 14px 16px;
+  padding: 10px 15px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 .navbar a:hover {
   color: #ffcc00;
-  transform: scale(1.1);
+  transform: scale(1.3);
+  text-decoration: underline;
+}
+.menu {
+  display: flex;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
 
 /* about me */
@@ -232,7 +252,7 @@ div, img{
 .carousel {
   display: flex;
   overflow-x: auto;
-  gap: 15px;
+  gap: 0px;
   padding: 10px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -243,11 +263,13 @@ div, img{
 }
 .carousel-item {
   flex: 0 0 auto;
-  width: 280px;
+  width: 310px;
   border: 2px solid #444;
   background: #222;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 0px;
+  border-radius: 0px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -255,9 +277,11 @@ div, img{
   transform: scale(1.05);
 }
 .carousel-item img {
-  width: 100%;
+  width: 300px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0px;
+  padding-top: 1px;
+  border-bottom-right-radius: 100px;
 }
 .description {
   font-size: 14px;
@@ -292,6 +316,9 @@ div, img{
   padding: 40px;
   background: #f4f4f4;
   color: #333;
+}
+#hireme{
+  margin-bottom: 10px;
 }
 #contact h1{
   text-decoration: underline;
@@ -454,6 +481,11 @@ div, img{
     width: 100%;
   }
 }
+/* typewriting cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
 @keyframes wave {
   0%, 100% {
     transform: translateY(0);
@@ -499,7 +531,14 @@ div, img{
   animation: jelly 0.7s ease-in-out;
 }
 .typing.visible {
-  animation: typing 2s steps(20, end);
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 .wave.visible {
   animation: wave 3s ease-in-out infinite;
@@ -514,9 +553,25 @@ div, img{
   body{
     font-size:14px;
   }
-  .navbar a{
-    font-size:14px;
-    padding:12px 14px;
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: rgba(68, 68, 68, 0.9);
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+  .menu.active {
+      display: flex;
+  }
+  .menu a {
+      padding: 15px;
+      text-align: center;
+      width: 100%;
+  }
+  .hamburger {
+      display: block;
   }
   .page{
     padding:1.5em;
@@ -534,10 +589,12 @@ div, img{
     font-size: 40px;
   }
   .carousel-btn.left {
-    left: -30px;
+    left: -35px;
+    background-color: #00000000;
   }
   .carousel-btn.right {
-    right: -30px;
+    right: -35px;
+    background-color: #00000000;
   }
 }
 @media(max-width:480px){
