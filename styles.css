@@ -92,7 +92,7 @@ body {
   justify-content: center;
   gap: min(8vw, 150px);
   text-align: justify;
-  padding: 5em 5%;
+  padding: 8em 5%;
   background: linear-gradient(135deg, #1e3c72 50%, #2a5298 70%, #1c3f6e 85%, #162a4e 100%);
   background-size: 200% 200%; 
   animation: gradientMove 8s infinite alternate ease-in-out;
