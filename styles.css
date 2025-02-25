@@ -178,7 +178,7 @@ body {
   margin: 5px;
 }
 .category{
-  min-width: 200px;
+  min-width: 250px;
   padding: 20px 0px;
   margin: 20px 5px;
   background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
@@ -207,6 +207,7 @@ body {
   background: rgba(0, 123, 255, 0.1); /* Light blue background */
   display: flex;
   justify-content:space-between;
+  text-align: left;
 }
 .skill span {
   font-weight: bold;
@@ -352,8 +353,8 @@ body {
   height: auto;
   border-radius: 20px;
   padding-top: 1px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a soft shadow */
-  background-color: #f8f9fa; /* Light background for better contrast */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa;
 }
 #personal-projects .description {
   font-size: 14px;
