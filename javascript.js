@@ -15,13 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(element);
     });
   });
-  
-// image carousel navigation
-function scrollCarousel(direction) {
-  const carousel = document.querySelector(".carousel");
-  const scrollAmount = 330; // Adjust scroll distance
-  carousel.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
-}
 
 // educ-eye animation
 function updatePupils(x, y) {
@@ -45,3 +38,49 @@ document.addEventListener("touchmove", (event) => {
       updatePupils(event.touches[0].clientX, event.touches[0].clientY);
   }
 }, { passive: true });
+
+// Personal Project Auto Hovering
+document.addEventListener("DOMContentLoaded", function () {
+  const projects = document.querySelectorAll(".personal-projects-container > div");
+  let index = 0;
+  let interval;
+  let isPaused = false;
+  let firstHover = true;
+
+  function hoverNext() {
+    if (isPaused) return;
+
+    projects.forEach((project) => project.classList.remove("hover-active"));
+    projects[index].classList.add("hover-active");
+
+    index = (index + 1) % projects.length;
+  }
+
+  function startAutoHover() {
+    if (firstHover) {
+      hoverNext(); // Immediately hover first project
+      firstHover = false;
+    }
+    interval = setInterval(hoverNext, 5000);
+  }
+
+  function stopAutoHover() {
+    clearInterval(interval);
+  }
+
+  projects.forEach((project) => {
+    project.addEventListener("mouseenter", function () {
+      isPaused = true;
+      stopAutoHover();
+      projects.forEach((p) => p.classList.remove("hover-active"));
+    });
+
+    project.addEventListener("mouseleave", function () {
+      isPaused = false;
+      startAutoHover();
+    });
+  });
+
+  startAutoHover();
+});
+
