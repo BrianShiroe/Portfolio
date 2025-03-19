@@ -12,41 +12,14 @@
   opacity: 1;
   transform: translateY(0);
 }
-.slide-up.visible {
-  animation: slideUp 0.6s ease-out;
-}
-.fade-in.visible {
-  animation: fadeIn 0.8s ease-in;
-}
 .slide-down.visible {
   animation: slideDown 0.7s ease-out;
 }
 .bounce-in.visible {
   animation: bounceIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.swing-in.visible {
-  animation: swingIn 0.8s ease-out;
-}
 
 /* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -68,16 +41,6 @@
   }
   100% {
     transform: scale(1);
-  }
-}
-@keyframes swingIn {
-  0% {
-    transform: rotateX(-100deg);
-    opacity: 0;
-  }
-  100% {
-    transform: rotateX(0);
-    opacity: 1;
   }
 }
 
@@ -304,15 +267,11 @@ body {
   flex-direction: column;
   gap: min(200px, 8%);
   padding: 60px 20px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  background-size: 200% 200%; /* Makes the gradient larger for animation effect */
 }
 #education h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   text-align: center;
-  color: white;
 }
 .education-item {
   background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
@@ -322,7 +281,6 @@ body {
   max-width: 600px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  position: relative;
   overflow: hidden;
 }
 .education-item:hover {
@@ -349,9 +307,6 @@ body {
 .education-item h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
-}
-#educ-h2-1{
-  margin-bottom: 0px;
 }
 #education .college {
   font-weight: bold;
@@ -461,7 +416,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  color: #333;
   background-size: 200% 200%;
 }
 #hireme{
@@ -472,7 +426,7 @@ body {
   color: #fffefe;
 }
 .contact-section, .info {
-  background: #fff;
+  background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 10px 8px 8px rgba(0, 0, 0, 0.1);
@@ -485,6 +439,9 @@ body {
   justify-content: center;
   gap: 15px;
   margin-top: 10px;
+}
+.info-grid a{
+  color: white;
 }
 .btn, .download-btn {
   display: inline-block;
@@ -511,7 +468,7 @@ body {
   text-align: left;
 }
 .resume-section {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
 }
 .download-btn {
