@@ -304,7 +304,7 @@ body {
   flex-direction: column;
   gap: min(200px, 8%);
   padding: 60px 20px;
-  color: #333;
+  color: white;
   font-family: "Poppins", sans-serif;
   background-size: 200% 200%; /* Makes the gradient larger for animation effect */
 }
@@ -315,7 +315,7 @@ body {
   color: white;
 }
 .education-item {
-  background: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #2c2c2c, #1e1e1e);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -348,7 +348,6 @@ body {
 }
 .education-item h2 {
   font-size: 1.8em;
-  color: #2980b9;
   margin-bottom: 10px;
 }
 #educ-h2-1{
@@ -356,16 +355,16 @@ body {
 }
 #education .college {
   font-weight: bold;
-  color: #555;
 }
 #education .graduation {
   font-style: italic;
-  color: #777;
 }
 #education .education-item h3 {
   font-size: 1.4em;
   margin-top: 20px;
-  color: #34495e;
+}
+#education p{
+  color: white;
 }
 #education ul {
   list-style: none;
@@ -373,34 +372,11 @@ body {
 }
 #education ul li {
   font-size: 1.1em;
-  background: #ecf0f1;
+  background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
   padding: 10px;
   border-radius: 8px;
   margin: 8px 0;
-}
-#educ-eye {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.eye {
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: inset 0 0 5px #000;
-  position: relative;
-}
-.pupil {
-  width: 20px;
-  height: 20px;
-  background: black;
-  border-radius: 50%;
-  position: absolute;
+  color: white;
 }
 
 /* projects */
