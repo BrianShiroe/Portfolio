@@ -404,21 +404,26 @@ body {
 }
 
 /* projects */
-#personal-projects{
+#personal-projects {
   text-align: center;
+  padding: 20px;
 }
-#personal-projects h1{
+
+#personal-projects h1 {
   margin-bottom: 20px;
 }
+
 .personal-projects-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 500px;
   gap: 10px;
 }
+
 .personal-projects-container > div {
-  flex: 0 0 120px;
+  flex: 1 1 120px;
+  max-width: 120px;
   border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -427,12 +432,14 @@ body {
   overflow: hidden;
   text-align: center;
 }
+
 .personal-projects-container > div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.5rem;
 }
+
 .personal-projects-container > div .content {
   color: #fff;
   display: flex;
@@ -450,9 +457,11 @@ body {
   bottom: 0;
   width: 100%;
 }
+
 .personal-projects-container > div:hover,
 .personal-projects-container > div.hover-active {
-  flex: 0 0 450px;
+  flex: 1 1 400px;
+  max-width: 400px;
   box-shadow: 1px 3px 15px #7645d8;
   transform: translateY(-10px);
 }
@@ -463,6 +472,43 @@ body {
   transform: translateY(0%);
   visibility: visible;
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .personal-projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-projects-container > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .personal-projects-container > div:hover,
+  .personal-projects-container > div.hover-active {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .personal-projects-container > div {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  .personal-projects-container > div:hover,
+  .personal-projects-container > div.hover-active {
+    flex: 1 1 90%;
+    max-width: 90%;
+  }
+
+  #personal-projects h1 {
+    font-size: 1.5rem;
+  }
+}
+
 
 /* contacts */
 #contact{
