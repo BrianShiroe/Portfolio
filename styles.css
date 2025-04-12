@@ -254,11 +254,19 @@ body {
   border-radius: 10px;
   background: rgba(0, 123, 255, 0.1); /* Light blue background */
   display: flex;
-  justify-content:space-between;
+  align-items: center; /* Vertically center icon and text */
+  justify-content: space-between;
   text-align: left;
+  gap: 8px;
+}
+.skill i {
+  color: #00d1d1;
+  margin-left: 6px;
 }
 .skill span {
   font-weight: bold;
+  font-family: monospace;
+  margin-left: auto; /* Push the skill level dots to the far right */
 }
 
 /* education */
