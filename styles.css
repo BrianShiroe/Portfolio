@@ -260,8 +260,8 @@ body {
   gap: 8px;
 }
 .skill i {
-  color: #00d1d1;
-  margin-left: 6px;
+  /* color: #00d1d1; */
+  margin-left: 5px;
 }
 .skill span {
   font-weight: bold;
@@ -290,6 +290,9 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: hidden;
+}
+.education-item i{
+  margin-right: 5px;
 }
 .education-item:hover {
   transform: scale(1.05);
