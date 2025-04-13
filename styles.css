@@ -419,6 +419,10 @@ body {
   line-height: 1.6;
   max-width: 80%;
 }
+#personal-projects .content a {
+  /* margin-top: auto; */
+  margin-top: 50px;
+}
 
 /* contacts */
 #contact{
