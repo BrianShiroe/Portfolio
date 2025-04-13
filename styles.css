@@ -174,7 +174,7 @@ body {
   margin-top: 20px;
 }
 #profile-img {
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
   border-radius: 50%;
   border: 5px solid #dfd7d7;
@@ -240,7 +240,7 @@ body {
   box-shadow: 6px 6px 10px rgba(0, 123, 255, 0.3);
 }
 .category h2{
-  font-size: 18px;
+  font-size: 20px;
   /* margin-bottom: 10px; */
   margin: 15px;
   text-align: center;
@@ -248,7 +248,7 @@ body {
   padding-bottom: 5px;
 }
 .skill {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px 10px;
   padding: 5px 10px;
   border-radius: 10px;
@@ -275,6 +275,31 @@ body {
   flex-direction: column;
   gap: min(200px, 8%);
   padding: 60px 20px;
+}
+#education .education-container {
+  margin-top: 10px;
+  display: flex;
+  gap: min(200px, 2%);
+  justify-content: center;
+}
+
+/* Style to ensure equal width for each item */
+.education-item {
+  width: 400px; /* Or use something like 45% if you prefer responsive width */
+  box-sizing: border-box;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  #education .education-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .education-item {
+    width: 90%; /* Maintain equal width on smaller screens */
+  }
 }
 #education h1 {
   font-size: 2.5em;
@@ -315,7 +340,7 @@ body {
   color: #0073e6;
   transition: color 0.3s ease-in-out;
 }
-.education-item h2 {
+#education h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
 }
@@ -325,9 +350,9 @@ body {
 #education .graduation {
   font-style: italic;
 }
-#education .education-item h3 {
+#education h3 {
   font-size: 1.4em;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 #education ul {
   list-style: none;
