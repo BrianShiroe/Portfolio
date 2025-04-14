@@ -276,31 +276,6 @@ body {
   gap: min(200px, 8%);
   padding: 60px 20px;
 }
-#education .education-container {
-  margin-top: 10px;
-  display: flex;
-  gap: min(200px, 2%);
-  justify-content: center;
-}
-
-/* Style to ensure equal width for each item */
-.education-item {
-  width: 400px; /* Or use something like 45% if you prefer responsive width */
-  box-sizing: border-box;
-}
-
-/* Responsive layout for smaller screens */
-@media (max-width: 768px) {
-  #education .education-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .education-item {
-    width: 90%; /* Maintain equal width on smaller screens */
-  }
-}
 #education h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -315,6 +290,7 @@ body {
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: hidden;
+  /* margin-top: 20px; */
 }
 .education-item i{
   margin-right: 5px;
@@ -366,7 +342,8 @@ body {
   background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
   padding: 10px;
   border-radius: 8px;
-  margin: 8px 0;
+  /* margin: 8px 0; */
+  margin: 10px;
   color: white;
 }
 
