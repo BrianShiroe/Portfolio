@@ -479,6 +479,7 @@ body {
 .info-grid i {
   margin-right: 10px;
   text-align: center;
+  width: 20px;
 }
 .resume-section {
   margin-top: 10px;
