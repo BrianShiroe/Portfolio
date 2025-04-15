@@ -81,7 +81,7 @@ a{
 /*NAVBAR*/
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, rgb(20, 20, 20), rgb(30, 30, 30));
   position: fixed;
@@ -475,6 +475,10 @@ body {
   grid-template-columns: 1fr;
   gap: 10px;
   text-align: left;
+}
+.info-grid i {
+  margin-right: 10px;
+  text-align: center;
 }
 .resume-section {
   margin-top: 10px;
