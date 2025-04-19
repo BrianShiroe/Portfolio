@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This website showcases my skills, projects, education, and contact information in an interactive and visually appealing way.
 
-🌐 **Live Demo:** [brianshiroe.github.io/Portfolio/](https://brianshiroe.github.io/Portfolio/)
+🌐 **Live Demo:** [brianshiroe.github.io/Portfolio/](brianshiroe.github.io)
 
 ---
 
