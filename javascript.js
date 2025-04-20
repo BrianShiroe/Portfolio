@@ -24,4 +24,21 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('This link is disabled and cannot be clicked.');
     });
   });
+
+  // Adjust scroll position by 20px when clicking on links
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default anchor behavior
+
+      const targetId = link.getAttribute('href').slice(1); // Get the ID of the target section
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 10, // Scroll to the target position minus 20px
+          behavior: 'smooth' // Smooth scrolling effect
+        });
+      }
+    });
+  });
 });
