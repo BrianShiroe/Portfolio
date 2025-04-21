@@ -34,11 +34,6 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 
 ---
 
-## 📸 Preview
-![Portfolio Preview](image/preview.png)
-
----
-
 ## 📬 Contact Me
 📩 **Email:** brianshiroe@gmail.com
 🔗 **LinkedIn:** linkedin.com/in/brian-haw-042b6827b
