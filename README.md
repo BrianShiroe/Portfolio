@@ -53,8 +53,9 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 ---
 
 ## 📬 Contact Me
-📩 **Email:** [brianshiroe@gmail.com](mailto:brianshiroe@gmail.com)  
-🔗 **LinkedIn:** [linkedin.com/in/brian-haw-042b6827b](https://www.linkedin.com/in/brian-haw-042b6827b/)
+📩 **Email:** brianshiroe@gmail.com
+🔗 **LinkedIn:** linkedin.com/in/brian-haw-042b6827b
+🔗 **Facebook:** facebook.com/brianshiroe
 
 If you like my portfolio, feel free to connect or give a ⭐ on the repository!
 
