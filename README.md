@@ -39,19 +39,6 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 
 ---
 
-## 🚀 Setup & Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/brianshiroe/Portfolio.git
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd Portfolio
-   ```
-3. Open `index.html` in a browser.
-
----
-
 ## 📬 Contact Me
 📩 **Email:** brianshiroe@gmail.com
 🔗 **LinkedIn:** linkedin.com/in/brian-haw-042b6827b
