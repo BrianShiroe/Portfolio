@@ -18,19 +18,19 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 
 ## 📂 Sections
 ### 🔹 About Me
-- Brief introduction about my background and passion for software development.
+- Brief introduction about my background and passion.
 
 ### 🔹 Skills
-- Showcases my proficiency in programming languages, game engines, web technologies, databases, and software tools.
+- Showcases my proficiency in various fields such as programming languages, web technologies, databases, software tools, and more.
 
 ### 🔹 Education
 - Information about my academic background and achievements.
 
 ### 🔹 Personal Projects
-- Display of my game development, machine learning, and software projects with descriptions and images.
+- Display of my personal projects, along with image and descriptions.
 
 ### 🔹 Contact
-- Ways to connect with me, including **LinkedIn** and **Email**.
+- Ways to connect with me, including **LinkedIn**, **Facebook** and **Email**.
 
 ---
 
