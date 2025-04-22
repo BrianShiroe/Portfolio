@@ -30,14 +30,14 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 - Display of my personal projects, along with image and descriptions.
 
 ### 🔹 Contact
-- Ways to connect with me, including **LinkedIn**, **Facebook** and **Email**.
+- Ways to connect with me, including **LinkedIn**, **Facebook**, and **Email**.
 
 ---
 
 ## 📬 Contact Me
-📩 **Email:** brianshiroe@gmail.com
-🔗 **LinkedIn:** linkedin.com/in/brian-haw-042b6827b
-🔗 **Facebook:** facebook.com/brianshiroe
+📩 **Email:** brianshiroe@gmail.com  
+🔗 **LinkedIn:** [linkedin.com/in/brianshiroe](https://linkedin.com/in/brianshiroe)  
+🔗 **Facebook:** [facebook.com/brianshiroe](https://facebook.com/brianshiroe)
 
 If you like my portfolio, feel free to connect or give a ⭐ on the repository!
 
