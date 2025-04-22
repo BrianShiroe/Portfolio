@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This website showcases my skills, projects, education, and contact information in an interactive and visually appealing way.
 
-🌐 **Click Here to Access Live Portfolio:** [brianshiroe.netlify.app](https://brianshiroe.netlify.app/)
+🌐 **Click Here to Access Live Portfolio:** [brianshiroe.github.io](https://brianshiroe.github.io/)
 
 ---
 
