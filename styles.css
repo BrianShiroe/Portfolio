@@ -493,11 +493,11 @@ body {
   text-align: center;
 }
 .download-btn {
-  background: #28a745;
+  background: #0073e6;
   margin-top: 10px;
   margin-bottom: 100px;
 }
 .download-btn:hover {
-  background: #218838;
+  background: #005bb5;
   transform: scale(1.05);
 }
