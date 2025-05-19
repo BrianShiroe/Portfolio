@@ -7,7 +7,9 @@ Live Demo: https://brianshiroe.netlify.app
 
 Welcome to my personal portfolio! This website showcases my skills, projects, education, and contact information in an interactive and visually appealing way.
 
-🌐 **Click Here to Access Live Portfolio:** [brianshiroe.github.io](https://brianshiroe.github.io/)
+---
+## 🌐 Live Demo
+Link [brianshiroe.github.io](https://brianshiroe.github.io/)
 
 ---
 
