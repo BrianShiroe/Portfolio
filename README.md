@@ -49,7 +49,3 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 🔗 **Facebook:** [facebook.com/brianshiroe](https://facebook.com/brianshiroe)
 
 If you like my portfolio, feel free to connect or give a ⭐ on the repository!
-
----
-
-### © 2025 Brian O. Haw | All Rights Reserved
