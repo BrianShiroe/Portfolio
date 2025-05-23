@@ -9,7 +9,7 @@ Welcome to my personal portfolio! This website showcases my skills, projects, ed
 
 ---
 ## 🌐 Live Demo
-Link [brianshiroe.github.io](https://brianshiroe.github.io/)
+Link [brianshiroevanilla.netlify.app](https://brianshiroevanilla.netlify.app/)
 
 ---
 
