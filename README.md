@@ -11,6 +11,8 @@ Welcome to my personal portfolio! This website showcases my skills, projects, ed
 ## 🌐 Live Demo
 Link [brianshiroevanilla.netlify.app](https://brianshiroevanilla.netlify.app/)
 
+![Portfolio Demo](demo.png)
+
 ---
 
 ## 📖 About the Portfolio
