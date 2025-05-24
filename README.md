@@ -25,27 +25,17 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 
 ---
 
-## 📂 Sections
-### 🔹 About Me
-- Brief introduction about my background and passion.
+## Getting Started
 
-### 🔹 Skills
-- Showcases my proficiency in various fields such as programming languages, web technologies, databases, software tools, and more.
+1. Clone repository
+```bash
+git clone https://github.com/BrianShiroe/portfolio-react-typescript-tailwind.git
+```
+2. Navigate to the project directory
+```bash
+cd portfolio-react-typescript-tailwind
+```
 
-### 🔹 Education
-- Information about my academic background and achievements.
-
-### 🔹 Personal Projects
-- Display of my personal projects, along with image and descriptions.
-
-### 🔹 Contact
-- Ways to connect with me, including **LinkedIn**, **Facebook**, and **Email**.
-
----
-
-## 📬 Contact Me
-📩 **Email:** brianshiroe@gmail.com  
-🔗 **LinkedIn:** [linkedin.com/in/brianshiroe](https://linkedin.com/in/brianshiroe)  
-🔗 **Facebook:** [facebook.com/brianshiroe](https://facebook.com/brianshiroe)
+### Show your support
 
 If you like my portfolio, feel free to connect or give a ⭐ on the repository!
