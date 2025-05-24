@@ -29,11 +29,11 @@ This portfolio is a fully responsive and animated website built using **HTML, CS
 
 1. Clone repository
 ```bash
-git clone https://github.com/BrianShiroe/portfolio-react-typescript-tailwind.git
+git clone https://github.com/BrianShiroe/portfolio-vanilla-html-css-javascript.git
 ```
 2. Navigate to the project directory
 ```bash
-cd portfolio-react-typescript-tailwind
+cd portfolio-vanilla-html-css-javascript
 ```
 
 ### Show your support
