@@ -16,7 +16,7 @@ Link [brianshiroevanilla.netlify.app](https://brianshiroevanilla.netlify.app/)
 ---
 
 ## 📖 About the Portfolio
-This portfolio is a fully responsive and animated website built using **HTML, CSS, and JavaScript**. It highlights my expertise in **game development, machine learning, web technologies, and software engineering**.
+This portfolio is a fully responsive and animated website built using simple **HTML, CSS, and JavaScript**.
 
 ### 🛠️ Technologies Used
 - **Frontend:** HTML, CSS, JavaScript
